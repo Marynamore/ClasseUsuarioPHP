@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Classe Usuario</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     </div>
     <main class="container">
         <h1>Informação do Usuário</h1>
-        <form action="./controle/usuario_action.php" method="post">
+        <form action="./usuario_action.php" method="post">
             <label for="nome" class="field-label">Nome:</label>
             <input type="text" name="nome" id="idnome" class="field">
             <label for="login" class="field-label">Login de Usuario:</label>

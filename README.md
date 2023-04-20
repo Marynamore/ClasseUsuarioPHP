@@ -25,45 +25,67 @@
 ```ruby
 <?php 
 
-class Calculadora{
-    private $valor1;
-    private $valor2;
-    
-    
-    function soma($valor1,$valor2){
-        return $this->valor1 = $valor1 += $this->valor2 = $valor2;
-        
+class Usuario{
+
+    private $nome;
+    private $login;
+    private $senha;
+    private $confirmaSenha;
+
+    function __construct($nome, $login)
+    {
+      $this->nome = $nome;
+      $this->login = $login;   
     }
 
-    function subtracao($valor1, $valor2){
-        return $this->valor1 = $valor1 -= $this->valor2 = $valor2;
+    public function verificar(){
+        if($this->nome == ""){
+            echo "Preencha este campo<br>";            
+        }elseif($this->login == ""){
+            echo "Preencha este campo<br>"; 
+        }elseif($this->senha == ""){
+            echo "Preencha este campo<br>"; 
+        }elseif($this->confirmaSenha == ""){
+            echo "Preencha este campo<br>"; 
+        }elseif($this->senha != $this->confirmaSenha){
+            echo "A <strong>senha</strong> e o <strong>confirma senha NÃO</strong> estão iguais!<br>";
+        }else{
+            echo "<strong>Validação de usuário bem sucedida!</strong>";
+        }
     }
 
-    function multiplicacao($valor1, $valor2){
-        return $this->valor1 = $valor1 *= $this->valor2 = $valor2;
+    public function getNome(){
+        return $this->nome;
     }
 
-    function divisao($valor1, $valor2){
-        return $this->valor1 = $valor1 /= $this->valor2 = $valor2;
+    public function getLogin(){
+        return $this->login;
     }
 
-    function getValor1(){
-        return $this->valor1;
+    public function getSenha(){
+        return $this->senha;
     }
 
-    function setValor1($valor1){
-        $this->valor1 = $valor1;
+    public function getConfirmaSenha(){
+        return $this->confirmaSenha;
     }
 
-    function getValor2(){
-        return $this->valor2;
+    public function setNome($nome){
+        $this->nome = $nome;
     }
 
-    function setValor2($valor2){
-        $this->valor2 = $valor2;
+    public function setLogin($login){
+        $this->login = $login;
+    }
+
+    public function setSenha($senha){
+        $this->senha = trim($senha);
+    }
+
+    public function setConfirmaSenha($confirmaSenha){
+        $this->confirmaSenha = $confirmaSenha;
     }
 }
-
 ?>
 ```
 

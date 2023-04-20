@@ -79,7 +79,7 @@ class Usuario{
     }
 
     public function setSenha($senha){
-        $this->senha = trim($senha);
+        $this->senha = $senha;
     }
 
     public function setConfirmaSenha($confirmaSenha){

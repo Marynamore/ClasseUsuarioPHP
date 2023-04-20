@@ -1,23 +1,55 @@
-# classeUsuarioPHP
+# Classe Usuario 
 
-:pushpin: Classe e Instancia
+:pushpin: Orientação a Objetos – Estudo das Classes e Objetos
 ***
 
-## Sobre
-:pushpin: Em orientação a objetos, uma classe é uma estrutura que abstrai um
-conjunto de objetos com características similares. Uma classe define o
-comportamento de seus objetos através de métodos e os estados possíveis
-destes objetos através de atributos. Em outros termos, uma classe descreve
-os serviços providos por seus objetos e quais informações eles podem
-armazenar.( wikipédia)
-Uma classe é uma estrutura de dados, formada por atributos que
-representam características, por exemplo, uma classe que representa um
-carro possui atributos como, ano, modelo, cor, motor, aceleração, velocidade,
-placa e etc... A classe também possui métodos, que representam
-comportamentos, por exemplo, o carro tem métodos como ligar, acelerar,
-freiar, desligar e etc..
+## Classe 
+:pushpin: Em orientação a objetos, o conceito de classe nada mais é do que uma estrutura que define uns tipos de dados, podendo conter variáveis (chamaremos de atributos) e também funções (chamaremos de métodos). Classes manipulam definições e objetos manipulam valores.
 
-:---:
+```ruby
+<?php 
+
+class Calculadora{
+    private $valor1;
+    private $valor2;
+    
+    
+    function soma($valor1,$valor2){
+        return $this->valor1 = $valor1 += $this->valor2 = $valor2;
+        
+    }
+
+    function subtracao($valor1, $valor2){
+        return $this->valor1 = $valor1 -= $this->valor2 = $valor2;
+    }
+
+    function multiplicacao($valor1, $valor2){
+        return $this->valor1 = $valor1 *= $this->valor2 = $valor2;
+    }
+
+    function divisao($valor1, $valor2){
+        return $this->valor1 = $valor1 /= $this->valor2 = $valor2;
+    }
+
+    function getValor1(){
+        return $this->valor1;
+    }
+
+    function setValor1($valor1){
+        $this->valor1 = $valor1;
+    }
+
+    function getValor2(){
+        return $this->valor2;
+    }
+
+    function setValor2($valor2){
+        $this->valor2 = $valor2;
+    }
+}
+
+?>
+```
   
 ## :pencil: Exercicio de POO 
 - [x] Crie uma classe USUARIO com os atributos nome, login, senha, confirmaSenha

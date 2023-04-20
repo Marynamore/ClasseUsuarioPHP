@@ -11,7 +11,7 @@
 
 ## :joystick: Algumas Telas do Front-End
 ### :small_blue_diamond: Senha e Confirmar senha IGUAIS
-![index](https://user-images.githubusercontent.com/86386469/233236947-b2e4e076-71f5-45ec-8339-f9d9c8ada1cd.png)
+![index](https://user-images.githubusercontent.com/86386469/233237650-b3d5407f-5507-4d7f-9396-91399396610d.png)
 ![result_true](https://user-images.githubusercontent.com/86386469/233236961-3baade12-3926-410f-8f92-8d2bbd8c607a.png)
 ***
 ### :small_blue_diamond: Senha e Confirmar senha DIFERENTES

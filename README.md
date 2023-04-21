@@ -22,7 +22,7 @@
 ## Classe 
 :pushpin: Em orientação a objetos, o conceito de classe nada mais é do que uma estrutura que define uns tipos de dados, podendo conter variáveis (chamaremos de atributos) e também funções (chamaremos de métodos). Classes manipulam definições e objetos manipulam valores.
 
-```ruby
+```php
 <?php 
 
 class Usuario{

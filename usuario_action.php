@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="img-wrapper">
-        <img src="https://www.ssu.ca/wp-content/uploads/2021/03/surface-E9NcsvbRVqo-unsplash-e1615815768341.jpg" alt="menina estudando">
+        <img src="https://images.unsplash.com/photo-1685625971422-6fdc6c5129d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=401&q=80" alt="menina estudando">
     </div>
     <main class="container">
         <div>

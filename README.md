@@ -39,18 +39,18 @@ class Usuario{
     }
 
     public function verificar(){
-        if($this->nome == ""){
-            echo "Preencha este campo<br>";            
-        }elseif($this->login == ""){
-            echo "Preencha este campo<br>"; 
-        }elseif($this->senha == ""){
-            echo "Preencha este campo<br>"; 
-        }elseif($this->confirmaSenha == ""){
-            echo "Preencha este campo<br>"; 
-        }elseif($this->senha != $this->confirmaSenha){
-            echo "A <strong>senha</strong> e o <strong>confirma senha NÃO</strong> estão iguais!<br>";
+        if(empty($this->nome)){
+            echo "Preencha o campo 'Nome'<br>";            
+        }elseif(empty($this->login)){
+            echo "Preencha o campo 'Login'<br>"; 
+        }elseif(empty($this->senha)){
+            echo "Preencha o campo 'Senha'<br>"; 
+        }elseif(empty($this->confirmaSenha)){
+            echo "Preencha o campo 'Confirme a Senha'<br>"; 
+        }elseif($this->senha !== $this->confirmaSenha){
+            echo "A senha e o confirma senha NÃO correspondem!<br>";
         }else{
-            echo "<strong>Validação de usuário bem sucedida!</strong>";
+            echo "Cadastro realizado com sucesso!";
         }
     }
 
@@ -79,14 +79,15 @@ class Usuario{
     }
 
     public function setSenha($senha){
-        $this->senha = $senha;
+        $this->senha = trim($senha);
     }
 
     public function setConfirmaSenha($confirmaSenha){
-        $this->confirmaSenha = $confirmaSenha;
+        $this->confirmaSenha = trim($confirmaSenha);
     }
 }
 ?>
+
 ```
 ## Contribuição
 
